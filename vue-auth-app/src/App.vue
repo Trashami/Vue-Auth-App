@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import { signIn, getToken, msalInstance, initializeMsal } from "./authService";
 import Header from "./components/Header.vue";
+import DideRoller from "./components/DideRoller.vue";
 
 
 const isAuthenticated = ref(false);
@@ -49,8 +50,9 @@ initializeApp();
   <div>
     <Header />
     <main>
-      <h2>Welcome to the App</h2>
-      <p>This is your Vue SPA with Entra Authentication.</p>
+      <h1>Welcome to the App</h1>
+      <p>This is your Vue SPA with Entra Auth.</p>
+      <DideRoller />
     </main>
   </div>
 </template>

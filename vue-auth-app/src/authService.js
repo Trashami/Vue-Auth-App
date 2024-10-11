@@ -57,6 +57,8 @@ export const getToken = async () => {
     }
 };
 
+
+
 export const getUserProfile = async () => {
     try {
         const token = await getToken();

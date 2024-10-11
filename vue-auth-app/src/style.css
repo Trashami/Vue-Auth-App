@@ -29,6 +29,10 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+p {
+  font-size: 1.2em;
+  margin: 0;
+}
 
 h1 {
   font-size: 3.2em;
@@ -36,8 +40,6 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -76,4 +78,124 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Added by developer */
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  max-height: 4rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-height: 4rem;
+}
+
+.home-link {
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.home-link:hover {
+  background-color: #444;
+}
+
+.home-link h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 10px;
+}
+
+.user-actions:hover {
+  background-color: #444;
+}
+
+.user-info {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: white;
+  color: black;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2000;
+  width: 300px;
+  padding: 1rem;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.organization-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+
+.profile-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.profile-pic-large {
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+}
+
+.user-info-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-full-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.user-email {
+  font-size: 0.9rem;
+  color: gray;
 }
